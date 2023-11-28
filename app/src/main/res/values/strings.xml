@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">UTS_806_3a_073</string>
+    <string-array name="tipe_kamar">
+        <item>Melati</item>
+        <item>Mawar</item>
+        <item>Anggrek</item>
+    </string-array>
+</resources>
