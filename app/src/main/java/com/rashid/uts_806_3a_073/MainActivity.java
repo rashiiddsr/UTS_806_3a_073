@@ -61,17 +61,22 @@ Button proses, batal, keluar;
             diskonAwal = totalBayar * 10/100;
             hargaSementara = totalBayar - diskonAwal;
 
+
+
             biayaTambahan = 0.0;
 
             if (tipenyaKamar.equals("Presidential Suite")) {
                 diskonTambah = totalBayar * 73/40/100;
+                biayaTambahan = tarifKamar * 73/5/100;
             } else if (tipenyaKamar.equals("Superior Room")) {
                 diskonTambah = totalBayar * 73/20/100;
+                biayaTambahan = tarifKamar * 73/3/100;
             } else {
-                diskonTambah = totalBayar * 73/20/100;
+                diskonTambah = totalBayar * 73/10/100;
+                biayaTambahan = tarifKamar * 73/2/100;
             }
 
-            hargaAkhir = hargaSementara - diskonTambah;
+            hargaAkhir = hargaSementara - diskonTambah + biayaTambahan;
 
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             String pesanAkhir = "ID Kamar : " + IDKamar +
